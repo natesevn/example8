@@ -39,8 +39,18 @@ The iterator is implemented using the methods `hasNext( )` and `nextTag( )` that
 
     }
 
-    // advances to next tag in input;
-    // probably not a perfect HTML tag tokenizer, but it will do for now
+   /**
+     * This method advances to next tag in the input StreamBuffer; probably not
+     * a perfect HTML tag tokenizer, but it will do for now.
+     * 
+     * This method should be used if hasNextTag( ) returns true. Otherwise this
+     * method will return null and that can be problematic.
+     * 
+     * @param buf
+     *            the StreamBuffer to obtain a tag from
+     * @return the next tag or null if there is no other tag. This method
+     *         modifies buf by removing the next tag, if it should exist.
+     */
     public static HtmlTag nextTag(StringBuffer buf) {
         int index1 = buf.indexOf("<");
         int index2 = buf.indexOf(">");
