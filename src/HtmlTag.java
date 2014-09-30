@@ -167,7 +167,7 @@ public class HtmlTag {
      * This method advances to next tag in the input StreamBuffer; probably not
      * a perfect HTML tag tokenizer, but it will do for now.
      * 
-     * This method should be used if hasNextTag( ) returns true. Otherwise this
+     * This method should be used if hasNext( ) returns true. Otherwise this
      * method will return null and that can be problematic.
      * 
      * @param buf
