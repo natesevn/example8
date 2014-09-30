@@ -1,4 +1,4 @@
-###### Example 8: Custom Iterators
+Example 8: Custom Iterators
 ========
 
 
