@@ -1,4 +1,4 @@
-Example 8: Creating and Using a Custom Iterator
+###### Example 8: Custom Iterators
 ========
 
 
